@@ -1,0 +1,25 @@
+.weather-card {
+  background-color: rgb(186, 186, 186);
+  flex: 1; /*To fill up parent element*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.cur-weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.weather-add {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cur-temp {
+  width: 50%;
+  font-size: 5cqw;
+}
