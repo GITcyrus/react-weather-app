@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Home.css";
 import WeatherCard from "../components/WeatherCard";
+import WeatherRange from "../components/WeatherRange";
 
 /*
 Requirements:
@@ -25,9 +26,29 @@ const Home = () => {
       </div>
       <div id="hourly" className="section">
         Hourly Weather
+        <WeatherRange
+          increments={[
+            { id: 0, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 1, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 2, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 3, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 4, time: "3pm", temp: 20, feels: 18, precip: 80 },
+          ]}
+        />
       </div>
       <div id="weekly" className="section">
         Weekly Weather
+        <WeatherRange
+          increments={[
+            { id: 5, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 6, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 7, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 8, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 9, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 10, time: "3pm", temp: 20, feels: 18, precip: 80 },
+            { id: 11, time: "3pm", temp: 20, feels: 18, precip: 80 },
+          ]}
+        />
       </div>
       <div id="extras" className="section">
         Extras

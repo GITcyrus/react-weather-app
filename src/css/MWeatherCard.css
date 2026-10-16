@@ -1,0 +1,15 @@
+.mini-card {
+  background-color: rgb(186, 186, 186);
+  height: 100%;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-atmo {
+  width: 50%;
+  aspect-ratio: 1/1;
+}

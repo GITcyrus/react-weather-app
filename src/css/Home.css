@@ -3,7 +3,7 @@
   height: 100%;
   margin: auto;
   display: grid;
-  grid-template-rows: 1fr 5fr 3fr 2fr;
+  grid-template-rows: 1fr 5fr 4fr 2fr;
   grid-template-columns: 1fr 2fr;
   grid-gap: 40px 20px;
   grid-template-areas:
@@ -13,21 +13,30 @@
     "extras extras";
 }
 
+.container > * {
+  border-radius: 5px;
+}
+
 .section {
   background-color: gray;
   padding: 20px;
-  border-radius: 5px;
 }
 
 #location {
   grid-area: location;
 }
 
-#weather {
-  grid-area: weather;
+#weather,
+#hourly,
+#weekly,
+#extras {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+#weather {
+  grid-area: weather;
 }
 
 #hourly {
