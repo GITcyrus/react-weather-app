@@ -1,0 +1,52 @@
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 5fr 4fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px 20px;
+  grid-template-areas:
+    "location location"
+    "weather hourly"
+    "weekly weekly"
+    "extras extras";
+}
+
+.container > * {
+  border-radius: 5px;
+}
+
+.section {
+  background-color: gray;
+  padding: 20px;
+}
+
+#location {
+  grid-area: location;
+}
+
+#weather,
+#hourly,
+#weekly,
+#extras {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#weather {
+  grid-area: weather;
+}
+
+#hourly {
+  grid-area: hourly;
+}
+
+#weekly {
+  grid-area: weekly;
+}
+
+#extras {
+  grid-area: extras;
+}
